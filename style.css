@@ -1,0 +1,200 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Georgia', Georgia, Arial, sans-serif;
+  background-color: #1a1a1a;
+}
+
+header {
+  margin-top: 7%;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5vw;
+  margin-bottom: 0;
+  color: #f2f2f2;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3.0vw;
+  color: #f2f2f2;
+}
+
+p {
+  text-align: center;
+  font-size: 1.8vw;
+  color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: #FF7F50;
+}
+
+nav {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.hor-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li.hor-li {
+  display: inline-block;
+  margin: 0;
+  margin-left: 2.5%;
+  padding: 0
+}
+
+li.hor-li a {
+  display: inline-block;
+  text-align: center;
+  font-size: 2.5vw;
+  text-decoration: none;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.hor-list li:first-child {
+  margin-left: 0;
+}
+
+.nav li:first-child {
+  margin-left: 0;
+}
+
+.cv li:first-child {
+  margin-left: 0;
+}
+
+#skills {
+  display: -webkit-flex;
+  display: flex;
+  padding-left: 9%;
+}
+
+#left_skills {
+  min-width: 50%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+#left_skills strong {
+  font-size: 1.7vw;
+}
+
+#left_skills li {
+  color: #f2f2f2;
+  font-size: 1.4vw;
+  margin: 2.2%;
+  margin-left: 0;
+}
+
+#right_skills {
+  padding-left: 1%;
+  min-width: 50%;
+  margin-top: 0;
+  padding-top: 0;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+}
+
+#right_skills strong {
+  font-size: 1.7vw;
+}
+
+#right_skills li {
+  color: #f2f2f2;
+  font-size: 1.4vw;
+  margin: 2.2%;
+  margin-left: 0;
+}
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+#projects {
+  text-align: center;
+}
+
+#projects p {
+  text-align: center;
+  margin-top: 3%;
+}
+
+#projects img {
+  max-width: 100%;
+  height: auto;
+}
+
+#contacts {
+  text-align: center;
+}
+
+#contacts p {
+  font-size: 1vw;
+}
+
+#CV {
+  text-align: center;
+}
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #1a1a1a;
+  text-align: center;
+  color: #FF7F50;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+  color: #444;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.gitP {
+  margin-top: 2%;
+}
