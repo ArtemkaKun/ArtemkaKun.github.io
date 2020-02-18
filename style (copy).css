@@ -1,0 +1,274 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Georgia", Georgia, Arial, sans-serif;
+}
+
+header {
+  background-image: linear-gradient(#31A3C9, #3099C5);
+  padding: 20px 100px 10px 100px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5vw;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3.0vw;
+  color: #ffffff;
+}
+
+p {
+  text-align: center;
+  font-size: 1.8vw;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #328dcc;
+}
+
+nav {
+  text-align: center;
+}
+
+main {
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f2f3f5;
+}
+
+.hor-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li.hor-li {
+  display: inline-block;
+  margin: 0 0 0 2.5%;
+  padding: 0;
+}
+
+li.hor-li a {
+  -moz-border-radius: 48px;
+  -webkit-border-radius: 48px;
+  border-radius: 48px;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  font-size: 2.5vw;
+  text-decoration: none;
+  padding: 10px 20px 10px 30px;
+  margin-bottom: 30px;
+  transition: background-color 0.5s linear;
+  animation: my-animation 2s;
+}
+
+#skill:hover {
+  background-color: #328dcc;
+}
+
+@keyframes my-animation {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#skill:before {
+  content: '•';
+  font-size: 2.5vw;
+  color: #358CCB;
+}
+
+#skill:hover:before {
+  color: #ffffff;
+}
+
+#proj:hover {
+  background-color: #009c94;
+}
+
+#proj:before {
+  content: '•';
+  font-size: 2.5vw;
+  color: #009c94;
+}
+
+#proj:hover:before {
+  color: #ffffff;
+}
+
+#c:hover {
+  background-color: #6e4ba0;
+}
+
+#c:before {
+  content: '•';
+  font-size: 2.5vw;
+  color: #6e4ba0;
+}
+
+#c:hover:before {
+  color: #ffffff;
+}
+
+#con:hover {
+  background-color: #ffaa80;
+}
+
+#con:before {
+  content: '•';
+  font-size: 2.5vw;
+  color: #ffaa80;
+}
+
+#con:hover:before {
+  color: #ffffff;
+}
+
+.hor-list li:first-child {
+  margin-left: 0;
+}
+
+.nav li:first-child {
+  margin-left: 0;
+}
+
+.cv li:first-child {
+  margin-left: 0;
+}
+
+#skills_list_start {
+  margin-top: 0;
+  color: #2f2f2f;
+}
+#skills {
+  display: -webkit-flex;
+  display: flex;
+  padding-left: 9%;
+  color: #2f2f2f;
+}
+
+#left_skills {
+  min-width: 50%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  color: #2f2f2f;
+}
+
+#left_skills strong {
+  font-size: 1.7vw;
+  color: #2f2f2f;
+}
+
+#left_skills li {
+  color: #f2f2f2;
+  font-size: 1.4vw;
+  margin: 2.2%;
+  margin-left: 0;
+  color: #2f2f2f;
+}
+
+#right_skills {
+  padding-left: 1%;
+  min-width: 50%;
+  margin-top: 0;
+  padding-top: 0;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  color: #2f2f2f;
+}
+
+#right_skills strong {
+  font-size: 1.7vw;
+  color: #2f2f2f;
+}
+
+#right_skills li {
+  color: #f2f2f2;
+  font-size: 1.4vw;
+  margin: 2.2%;
+  margin-left: 0;
+  color: #2f2f2f;
+}
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+#projects {
+  text-align: center;
+}
+
+#projects p {
+  text-align: center;
+  margin-top: 3%;
+}
+
+#projects img {
+  max-width: 100%;
+  height: auto;
+}
+
+#contacts {
+  text-align: center;
+}
+
+#contacts p {
+  font-size: 1vw;
+}
+
+#CV {
+  text-align: center;
+}
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #1a1a1a;
+  text-align: center;
+  color: #FF7F50;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+  color: #444;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.gitP {
+  margin-top: 2%;
+}

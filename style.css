@@ -4,197 +4,353 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: 'Georgia', Georgia, Arial, sans-serif;
-  background-color: #1a1a1a;
+  font-family: "Georgia", Georgia, Arial, sans-serif;
 }
 
 header {
-  margin-top: 7%;
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-main {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-h1 {
+  background-image: linear-gradient(#31A3C9, #3099C5);
   text-align: center;
-  font-size: 3.5vw;
-  margin-bottom: 0;
-  color: #f2f2f2;
+  padding: 1% 10% 0 10%;
 }
 
-h2 {
-  text-align: center;
-  font-size: 3.0vw;
-  color: #f2f2f2;
+header h1 {
+  font-size: 3vw;
+  margin: 0;
+  color: #f2f3f5;
 }
 
-p {
-  text-align: center;
+header p {
   font-size: 1.8vw;
-  color: #f2f2f2;
-}
-
-a {
-  text-decoration: none;
-  color: #FF7F50;
+  margin: 1% 0 0 0;
+  color: #f2f3f5;
 }
 
 nav {
-  text-align: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: 2% 0 1% 0;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
-.hor-list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  overflow: hidden;
-}
-
-li.hor-li {
-  display: inline-block;
-  margin: 0;
-  margin-left: 2.5%;
-  padding: 0
-}
-
-li.hor-li a {
+nav a {
+  -webkit-flex-grow: 1;
+  -ms-flex: 1;
+  flex-grow: 1;
+  -moz-border-radius: 48px;
+  -webkit-border-radius: 48px;
+  border-radius: 48px;
   display: inline-block;
   text-align: center;
   font-size: 2.5vw;
   text-decoration: none;
-  margin-top: 5%;
+  padding: 10px 20px 10px 20px;
+  color: #f2f3f5;
+  max-width: 15vw;
+  margin-top: 2%;
   margin-bottom: 5%;
 }
 
-.hor-list li:first-child {
-  margin-left: 0;
+#skill-button:hover {
+  background-color: #328dcc;
 }
 
-.nav li:first-child {
-  margin-left: 0;
+#projects-button:hover {
+  background-color: #009c94;
 }
 
-.cv li:first-child {
-  margin-left: 0;
+#CV-button:hover {
+  background-color: #6e4ba0;
+}
+
+#contacts-button:hover {
+  background-color: #ffaa80;
+}
+
+#skill-button:before {
+  color: #328dcc;
+}
+
+#projects-button:before {
+  color: #009c94;
+}
+
+#CV-button:before {
+  color: #6e4ba0;
+}
+
+#contacts-button:before {
+  color: #ffaa80;
+}
+
+#contacts-button:hover:before {
+  color: #f2f3f5;
+}
+
+#CV-button:hover:before {
+  color: #f2f3f5;
+}
+
+#projects-button:hover:before {
+  color: #f2f3f5;
+}
+
+#skill-button:hover:before {
+  color: #f2f3f5;
+}
+
+nav a:before {
+  content: '•';
+  font-size: 2.5vw;
+  margin-right: 2%;
+}
+
+nav a:visited {
+  color: #f2f3f5;
+}
+
+.nav-button {
+  margin: 0 0 0 2.5%;
+}
+
+body {
+  background-color: #f2f3f5;
+}
+
+main {
+  padding: 1% 10% 0 10%;
+  background-color: #f2f3f5;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 2.5vw;
+  margin: 0;
 }
 
 #skills {
   display: -webkit-flex;
   display: flex;
-  padding-left: 9%;
+  justify-content: center;
+  font-size: 1.8vw;
+}
+
+#skills strong {
+  font-size: 2vw;
+}
+
+#skills li {
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 #left_skills {
   min-width: 50%;
+  -webkit-flex-grow: 1;
+  -ms-flex: 1;
+  flex-grow: 1;
+  margin-left: 5%;
+}
+
+#left_skills ul{
   margin-bottom: 0;
-  padding-bottom: 0;
-  -webkit-flex: 1;
+}
+
+#right_skills {
+  min-width: 50%;
+  -webkit-flex-grow: 1;
+  -ms-flex: 1;
+  flex-grow: 1;
+  margin-left: 5%;
+}
+
+#right_skills ul{
+  margin-bottom: 0;
+}
+
+#projects {
+  margin-top: 2%;
+}
+
+#all-projects {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#all-projects img {
+  -webkit-flex-grow: 1;
+  -ms-flex: 1;
+  flex-grow: 1;
+  display: inline-block;
+  text-align: center;
+  padding: 5% 5% 5% 5%;
+  max-width: 15vw;
+}
+
+#all-projects img:hover {
+  -webkit-animation: pulse-button 2s;
+  animation: pulse-button 2s;
+}
+
+.projects {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  margin-top: 5%;
+}
+
+@keyframes appear {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes pulse-button {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1)
+  }
+  50% {
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8)
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1)
+  }
+}
+
+.projects div {
+  -webkit-flex-grow: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.projects div img {
+  display: inline-block;
+  width: 30vw;
+}
+
+.projects div ul {
+  display: inline-block;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  font-size: 1.8vw;
+}
+
+.projects div a {
+  display: inline-block;
+}
+
+.projects div a img {
+  display: inline-block;
+  width: 10vw;
+}
+
+.projects div p {
+  display: inline-block;
+  text-align: center;
+  margin-top: 4%;
+  font-size: 1.8vw;
+}
+
+.projects {
+  display: none;
+}
+
+#CV p{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 1.8vw;
+  text-align: center;
+}
+
+#CV div {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#CV div a {
+  display: inline-block;
+}
+
+#CV img {
+  width: 10vw;
+}
+
+#contacts {
+  margin-top: 3%;
+  text-align: center;
+}
+
+#contacts div {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-top: 1%;
+}
+
+#contacts div a {
+  display: inline-block;
+  text-align: center;
+  -webkit-flex-grow: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-#left_skills strong {
-  font-size: 1.7vw;
+#contacts div img {
+  width: 10vw;
 }
 
-#left_skills li {
-  color: #f2f2f2;
-  font-size: 1.4vw;
-  margin: 2.2%;
-  margin-left: 0;
+footer {
+  font-size: 1.8vw;
+  text-align: center;
 }
 
-#right_skills {
-  padding-left: 1%;
-  min-width: 50%;
-  margin-top: 0;
-  padding-top: 0;
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-}
-
-#right_skills strong {
-  font-size: 1.7vw;
-}
-
-#right_skills li {
-  color: #f2f2f2;
-  font-size: 1.4vw;
-  margin: 2.2%;
-  margin-left: 0;
-}
-
-@media (max-width: 600px) {
-  section {
+@media (max-width: 720px) {
+  #skills {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
-}
 
-#projects {
-  text-align: center;
-}
+  #right_skills ul {
+    margin-top: 0;
+  }
 
-#projects p {
-  text-align: center;
-  margin-top: 3%;
-}
+  #left_skills li ul {
+    padding-left: 5%;
+  }
 
-#projects img {
-  max-width: 100%;
-  height: auto;
-}
+  #right_skills li ul {
+    padding-left: 5%;
+  }
 
-#contacts {
-  text-align: center;
-}
+  nav a {
+    min-width: 35%;
+  }
 
-#contacts p {
-  font-size: 1vw;
-}
+  .projects {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
 
-#CV {
-  text-align: center;
-}
-
-
-
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  background-color: #1a1a1a;
-  text-align: center;
-  color: #FF7F50;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #ccc;
-  color: #444;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-.gitP {
-  margin-top: 2%;
+  .projects div ul {
+    padding-left: 5%;
+  }
 }
